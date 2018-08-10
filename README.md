@@ -1,9 +1,8 @@
 ## Robotics in India: Intelligent Robot, Self-Driving, Autonomous Car
 ### by Bartłomiej Borzyszkowski, 
 
+
 #### Python3 + OpenCV3
-
-
 #### Origin and inspiration for the project: https://github.com/hamuchiwa/AutoRCCar
 
 
