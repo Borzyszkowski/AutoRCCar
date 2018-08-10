@@ -1,8 +1,8 @@
 ## Robotics in India: Intelligent Robot, Self-Driving, Autonomous Car
-### by Bartłomiej Borzyszkowski
+### by Bartłomiej Borzyszkowski, Gdansk University of Technology | Karunya Institute of Technology and Sciences
 
 
-##### Python3 + OpenCV3
+##### Python3 + OpenCV3, Neural Networks, Raspberry Pi, Arduino Uno, PiCamera, Ultrasonic sensor
 ##### Origin and inspiration for the project: https://github.com/hamuchiwa/AutoRCCar
 
 
