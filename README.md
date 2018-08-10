@@ -2,7 +2,7 @@
 ### Python3 + OpenCV3
 
 
-### See self-driving in action
+### Origin and inspiration for the project:
 
 
 
