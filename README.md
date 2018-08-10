@@ -1,10 +1,10 @@
 ## Robotics in India: Intelligent Robot, Self-Driving, Autonomous Car
-## by Bartłomiej Borzyszkowski, 
+### by Bartłomiej Borzyszkowski, 
 
-### Python3 + OpenCV3
+#### Python3 + OpenCV3
 
 
-### Origin and inspiration for the project: https://github.com/hamuchiwa/AutoRCCar
+#### Origin and inspiration for the project: https://github.com/hamuchiwa/AutoRCCar
 
 
 
@@ -69,4 +69,3 @@ This project builds a self-driving RC car using Raspberry Pi, Arduino and open s
 
 6. **Self-driving in action**: First run `rc_driver.py` to start the server on the computer, and then run `stream_client.py` and `ultrasonic_client.py` on raspberry pi. 
 
-[中文文档](https://github.com/zhaoying9105/AutoRCCar) (感谢[zhaoying9105](https://github.com/zhaoying9105))
