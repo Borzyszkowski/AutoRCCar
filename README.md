@@ -1,11 +1,12 @@
-## AutoRCCar
-### Python3 + OpenCV3
+## Robotics in India: Intelligent Robot, Self-Driving, Autonomous Car
+### by Bartłomiej Borzyszkowski, Poland
+### Gdansk University of Technology (ETI) | Karunya Institute of Technology and Sciences (ET)
 
-<<<<<<< HEAD
-See self-driving in action
-=======
-See self-driving in action  
->>>>>>> 7303db8acd948e2a90c758bd779e8af3920668fd
+
+##### Python3 + OpenCV3, Neural Networks, Raspberry Pi, Arduino Uno, PiCamera, Ultrasonic sensor
+##### Origin and inspiration for the project: https://github.com/hamuchiwa/AutoRCCar
+
+
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=BBwEF6WBUQs
 " target="_blank"><img src="http://img.youtube.com/vi/BBwEF6WBUQs/0.jpg" width="360" height="240" border="10" /></a>
@@ -68,4 +69,3 @@ This project builds a self-driving RC car using Raspberry Pi, Arduino and open s
 
 6. **Self-driving in action**: First run `rc_driver.py` to start the server on the computer, and then run `stream_client.py` and `ultrasonic_client.py` on raspberry pi. 
 
-[中文文档](https://github.com/zhaoying9105/AutoRCCar) (感谢[zhaoying9105](https://github.com/zhaoying9105))
