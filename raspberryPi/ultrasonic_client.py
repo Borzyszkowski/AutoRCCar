@@ -1,9 +1,13 @@
+<<<<<<< HEAD
+__author__ = 'Borzyszkowski'
 """
 Reference:
 Ultrasonic Distance Measurement Using Python – Part 2
 http://www.raspberrypi-spy.co.uk/2013/01/ultrasonic-distance-measurement-using-python-part-2/
     
 """
+=======
+>>>>>>> 7303db8acd948e2a90c758bd779e8af3920668fd
 
 from socket import *
 import time
