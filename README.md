@@ -1,5 +1,5 @@
 ## Robotics in India: Intelligent Robot, Self-Driving, Autonomous Car
-### by Bartłomiej Borzyszkowski, 
+## by Bartłomiej Borzyszkowski ### Gdansk University of Technology
 
 
 #### Python3 + OpenCV3
