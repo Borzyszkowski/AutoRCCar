@@ -2,7 +2,7 @@
 ### Python3 + OpenCV3
 
 
-### Origin and inspiration for the project:
+### Origin and inspiration for the project: https://github.com/hamuchiwa/AutoRCCar
 
 
 
