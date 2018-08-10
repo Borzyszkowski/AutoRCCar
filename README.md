@@ -1,11 +1,10 @@
 ## AutoRCCar
 ### Python3 + OpenCV3
 
-<<<<<<< HEAD
+
 See self-driving in action
 =======
-See self-driving in action  
->>>>>>> 7303db8acd948e2a90c758bd779e8af3920668fd
+
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=BBwEF6WBUQs
 " target="_blank"><img src="http://img.youtube.com/vi/BBwEF6WBUQs/0.jpg" width="360" height="240" border="10" /></a>
