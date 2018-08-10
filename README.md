@@ -1,6 +1,6 @@
 ## Robotics in India: Intelligent Robot, Self-Driving, Autonomous Car
 ### by Bartłomiej Borzyszkowski, Poland
-### Gdansk University of Technology | Karunya Institute of Technology and Sciences
+### Gdansk University of Technology (ETI) | Karunya Institute of Technology and Sciences (ET)
 
 
 ##### Python3 + OpenCV3, Neural Networks, Raspberry Pi, Arduino Uno, PiCamera, Ultrasonic sensor
