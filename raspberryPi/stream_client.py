@@ -1,14 +1,5 @@
-<<<<<<< HEAD
 __author__ = 'Borzyszkowski'
 
-"""
-Reference:
-PiCamera documentation
-https://picamera.readthedocs.org/en/release-1.10/recipes2.html
-
-"""
-=======
->>>>>>> 7303db8acd948e2a90c758bd779e8af3920668fd
 
 import io
 import socket
@@ -19,7 +10,7 @@ import picamera
 
 # create socket and bind host
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-client_socket.connect(('192.168.1.100', 8000))
+client_socket.connect(('172.20.10.4',65533))
 connection = client_socket.makefile('wb')
 
 try:

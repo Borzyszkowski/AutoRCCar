@@ -15,11 +15,8 @@ class CollectTrainingData(object):
     def __init__(self, host, port, serial_port, input_size):
 
         self.server_socket = socket.socket()
-<<<<<<< HEAD
-        self.server_socket.bind(('172.20.10.4', 0))
-=======
+        #self.server_socket.bind(('172.20.10.4', 0))
         self.server_socket.bind((host, port))
->>>>>>> 7303db8acd948e2a90c758bd779e8af3920668fd
         self.server_socket.listen(0)
 
         # accept a single connection
@@ -45,19 +42,16 @@ class CollectTrainingData(object):
         total_frame = 0
 
         # collect images for training
-<<<<<<< HEAD
         print('Start collecting images...')
         e1 = cv2.getTickCount()
         image_array = np.zeros((1, 38400))
         label_array = np.zeros((1, 4), 'float')
-=======
         print("Start collecting images...")
         print("Press 'q' or 'x' to finish...")
         start = cv2.getTickCount()
 
         X = np.empty((0, self.input_size))
         y = np.empty((0, 4))
->>>>>>> 7303db8acd948e2a90c758bd779e8af3920668fd
 
         # stream video frames one by one
         try:
@@ -140,11 +134,8 @@ class CollectTrainingData(object):
                                 self.ser.write(chr(4).encode())
 
                             elif key_input[pygame.K_x] or key_input[pygame.K_q]:
-<<<<<<< HEAD
-                                print ('exit')
-=======
+
                                 print("exit")
->>>>>>> 7303db8acd948e2a90c758bd779e8af3920668fd
                                 self.send_inst = False
                                 self.ser.write(chr(0).encode())
                                 self.ser.close()
@@ -168,7 +159,6 @@ class CollectTrainingData(object):
 
             end = cv2.getTickCount()
             # calculate streaming duration
-<<<<<<< HEAD
             time0 = (e2 - e1) / cv2.getTickFrequency()
             print('Streaming duration:', time0)
 
@@ -177,15 +167,12 @@ class CollectTrainingData(object):
             print('Total frame:', total_frame)
             print('Saved frame:', saved_frame)
             print('Dropped frame', total_frame - saved_frame)
-=======
             print("Streaming duration: , %.2fs" % ((end - start) / cv2.getTickFrequency()))
-
             print(X.shape)
             print(y.shape)
             print("Total frame: ", total_frame)
             print("Saved frame: ", saved_frame)
             print("Dropped frame: ", total_frame - saved_frame)
->>>>>>> 7303db8acd948e2a90c758bd779e8af3920668fd
 
         finally:
             self.connection.close()
@@ -194,7 +181,7 @@ class CollectTrainingData(object):
 
 if __name__ == '__main__':
     # host, port
-    h, p = "192.168.1.100", 8000
+    h, p = ('172.20.10.4', 0)
 
     # serial port
     sp = "/dev/tty.usbmodem1421"

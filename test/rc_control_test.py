@@ -58,11 +58,8 @@ class RCTest(object):
 
                     # exit
                     elif key_input[pygame.K_x] or key_input[pygame.K_q]:
-<<<<<<< HEAD
-                        print ('Exit')
-=======
+
                         print("Exit")
->>>>>>> 7303db8acd948e2a90c758bd779e8af3920668fd
                         self.send_inst = False
                         self.ser.write(chr(0).encode())
                         self.ser.close()
@@ -70,7 +67,6 @@ class RCTest(object):
 
                 elif event.type == pygame.KEYUP:
                     self.ser.write(chr(0).encode())
-
 
 if __name__ == '__main__':
     RCTest()

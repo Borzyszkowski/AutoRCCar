@@ -1,4 +1,4 @@
-__author__ = 'zhengwang'
+__author__ = 'Borzyszkowski'
 
 from model import load_data, NeuralNetwork
 

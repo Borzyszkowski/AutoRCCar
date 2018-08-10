@@ -3,11 +3,8 @@ __author__ = 'Borzyszkowski'
 import sys
 import threading
 import socketserver
-<<<<<<< HEAD
 import serial
 import cv2
-=======
->>>>>>> 7303db8acd948e2a90c758bd779e8af3920668fd
 import numpy as np
 
 
@@ -15,15 +12,13 @@ from model import NeuralNetwork
 from rc_driver_helper import *
 
 # distance data measured by ultrasonic sensor
-<<<<<<< HEAD
 sensor_data = " "
 
 
 class NeuralNetwork(object):
 
     def __init__(self):
-        self.model = cv2.ANN_MLP()
-
+        self.model = cv2.ml.ANN_MLP_load()
     def create(self):
         layer_size = np.int32([38400, 32, 4])
         self.model.create(layer_size)
@@ -132,9 +127,9 @@ class ObjectDetection(object):
                     #    cv2.putText(image, 'Yellow', (x_pos+5, y_pos - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 255), 2)
                     #    self.yellow_light = True
         return v
-=======
+
 sensor_data = None
->>>>>>> 7303db8acd948e2a90c758bd779e8af3920668fd
+
 
 
 class SensorDataHandler(socketserver.BaseRequestHandler):
@@ -143,7 +138,7 @@ class SensorDataHandler(socketserver.BaseRequestHandler):
 
     def handle(self):
         global sensor_data
-<<<<<<< HEAD
+
         try:
             while self.data:
                 self.data = self.request.recv(1024)
@@ -152,14 +147,12 @@ class SensorDataHandler(socketserver.BaseRequestHandler):
                 print(sensor_data)
         finally:
             print("Connection closed on thread 2")
-=======
+
         while self.data:
             self.data = self.request.recv(1024)
             sensor_data = round(float(self.data), 1)
             # print "{} sent:".format(self.client_address[0])
             print(sensor_data)
->>>>>>> 7303db8acd948e2a90c758bd779e8af3920668fd
-
 
 class VideoStreamHandler(socketserver.StreamRequestHandler):
 
@@ -247,11 +240,10 @@ class VideoStreamHandler(socketserver.StreamRequestHandler):
                             stop_flag = True
                         self.stop_finish = cv2.getTickCount()
 
-<<<<<<< HEAD
                         self.stop_time = (self.stop_finish - self.stop_start)/cv2.getTickFrequency()
-=======
+
                         self.stop_time = (self.stop_finish - self.stop_start) / cv2.getTickFrequency()
->>>>>>> 7303db8acd948e2a90c758bd779e8af3920668fd
+
                         print("Stop time: %.2fs" % self.stop_time)
 
                         # 5 seconds later, continue driving
@@ -292,13 +284,11 @@ class VideoStreamHandler(socketserver.StreamRequestHandler):
                         self.rc_car.stop()
                         break
         finally:
-<<<<<<< HEAD
+
             print("Connection closed on thread 1")
-=======
+
             cv2.destroyAllWindows()
             sys.exit()
->>>>>>> 7303db8acd948e2a90c758bd779e8af3920668fd
-
 
 class ThreadServer(object):
     def __init__(self, host, port1, port2):
@@ -314,22 +304,21 @@ class ThreadServer(object):
         server = socketserver.TCPServer((host, port), SensorDataHandler)
         server.serve_forever()
 
-<<<<<<< HEAD
+
     distance_thread = threading.Thread(target=server_thread2, args=('172.20.10.4', 0))
     distance_thread.start()
     video_thread = threading.Thread(target=server_thread('172.20.10.4', 0))
     video_thread.start()
-=======
+
     def start(self):
         video_thread = threading.Thread(target=self.server_thread, args=(self.host, self.port1))
         video_thread.start()
         distance_thread = threading.Thread(target=self.server_thread2, args=(self.host, self.port2))
         distance_thread.start()
 
->>>>>>> 7303db8acd948e2a90c758bd779e8af3920668fd
 
 if __name__ == '__main__':
-    h, p1, p2 = "192.168.1.100", 8000, 8002
+    h, p1, p2 = '172.20.10.4',65533, 65534
 
     ts = ThreadServer(h, p1, p2)
     ts.start()

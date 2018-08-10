@@ -1,13 +1,5 @@
-<<<<<<< HEAD
 __author__ = 'Borzyszkowski'
-"""
-Reference:
-Ultrasonic Distance Measurement Using Python – Part 2
-http://www.raspberrypi-spy.co.uk/2013/01/ultrasonic-distance-measurement-using-python-part-2/
-    
-"""
-=======
->>>>>>> 7303db8acd948e2a90c758bd779e8af3920668fd
+
 
 from socket import *
 import time
@@ -18,12 +10,9 @@ GPIO.setwarnings(False)
 
 # create a socket and bind socket to the host
 client_socket = socket(AF_INET, SOCK_STREAM)
-client_socket.connect(('192.168.1.100', 8002))
+client_socket.connect(('172.20.10.4', 65534))
 
 def measure():
-    """
-    measure distance
-    """
     GPIO.output(GPIO_TRIGGER, True)
     time.sleep(0.00001)
     GPIO.output(GPIO_TRIGGER, False)

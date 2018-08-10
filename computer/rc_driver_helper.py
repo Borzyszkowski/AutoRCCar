@@ -1,4 +1,4 @@
-__author__ = 'zhengwang'
+__author__ = 'Borzyszkowski'
 
 import serial
 import cv2

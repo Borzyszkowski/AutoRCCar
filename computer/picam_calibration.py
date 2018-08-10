@@ -48,24 +48,16 @@ for file_name in images:
 # calibration
 retval, cameraMatrix, distCoeffs, rvecs, tvecs = cv2.calibrateCamera(object_points, image_points, (w, h), None, None)
 
-<<<<<<< HEAD
 print ("camera matrix:\n", cameraMatrix)
-=======
-print("camera matrix:\n", cameraMatrix)
->>>>>>> 7303db8acd948e2a90c758bd779e8af3920668fd
+
 
 # pi camera intrinsic parameters
 ay = cameraMatrix[1, 1]
 u0 = cameraMatrix[0, 2]
 v0 = cameraMatrix[1, 2]
-<<<<<<< HEAD
 print ("Ay:", ay)
 print ("u0:", u0)
 print ("v0:", v0)
-=======
-print("Ay:", ay)
-print("u0:", u0)
-print("v0:", v0)
->>>>>>> 7303db8acd948e2a90c758bd779e8af3920668fd
+
 
 cv2.destroyAllWindows()

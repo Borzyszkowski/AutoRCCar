@@ -1,4 +1,4 @@
-__author__ = 'zhengwang'
+__author__ = 'Borzyszkowski'
 
 import cv2
 import numpy as np
