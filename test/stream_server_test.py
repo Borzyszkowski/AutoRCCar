@@ -36,8 +36,7 @@ class VideoStreamingTest(object):
                     jpg = stream_bytes[first:last + 2]
                     stream_bytes = stream_bytes[last + 2:]
                     image = cv2.imdecode(np.fromstring(jpg, dtype=np.uint8),  cv2.IMREAD_GRAYSCALE)
-                    #image = cv2.imdecode(np.fromstring(jpg, dtype=np.uint8),  cv2.IMREAD_COLOR)
-                    image = cv2.imdecode(np.frombuffer(jpg, dtype=np.uint8), cv2.IMREAD_COLOR)
+                    #image = cv2.imdecode(np.frombuffer(jpg, dtype=np.uint8), cv2.IMREAD_COLOR)
                     cv2.imshow('image', image)
                     if cv2.waitKey(1) & 0xFF == ord('q'):
                         break
@@ -48,5 +47,5 @@ class VideoStreamingTest(object):
 
 if __name__ == '__main__':
     # host, port
-    h, p = ('172.20.10.4',65533)
+    h, p = ('172.20.10.4',65534)
     VideoStreamingTest(h, p)

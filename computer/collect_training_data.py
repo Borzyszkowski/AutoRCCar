@@ -181,7 +181,7 @@ class CollectTrainingData(object):
 
 if __name__ == '__main__':
     # host, port
-    h, p = ('172.20.10.4', 0)
+    h, p = ('172.20.10.4', 65534)
 
     # serial port
     sp = "/dev/tty.usbmodem1421"

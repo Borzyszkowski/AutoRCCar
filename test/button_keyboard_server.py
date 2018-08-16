@@ -4,7 +4,7 @@ import socket
 import time
 
 
-class SensorStreamingTest(object):
+class KeyboardStreaming(object):
     def __init__(self, host, port):
 
         self.server_socket = socket.socket()
@@ -16,6 +16,12 @@ class SensorStreamingTest(object):
         self.host_ip = socket.gethostbyname(self.host_name)
         self.streaming()
 
+    def type(self):
+        prediction = input("Type F,B,R,L or S: ")
+        prediction = prediction.lower()
+        print(prediction)
+        return prediction
+
     def streaming(self):
 
         try:
@@ -24,8 +30,9 @@ class SensorStreamingTest(object):
             start = time.time()
 
             while True:
-                sensor_data = float(self.connection.recv(1024))
-                print("Distance: %0.1f cm" % sensor_data)
+                prediction = type(self.connection.send(str(prediction)))
+                time.sleep(0.01)
+                print("Move: % " % prediction)
 
                 # test for 10 seconds
                 if time.time() - start > 10:
@@ -37,5 +44,5 @@ class SensorStreamingTest(object):
 
 
 if __name__ == '__main__':
-    h, p = ('172.20.10.4', 65534)
-    SensorStreamingTest(h, p)
+    h, p = ('172.20.10.4', 65530)
+    KeyboardStreaming(h, p)
