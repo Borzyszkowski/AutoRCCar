@@ -3,7 +3,7 @@
 ### Gdansk University of Technology (ETI) | Karunya Institute of Technology and Sciences (ET)
 
 
-##### Python3 + OpenCV3, Neural Networks, Raspberry Pi, Arduino Uno, PiCamera, Ultrasonic sensor
+##### Python3 + OpenCV3, Neural Networks, Raspberry Pi, Arduino Uno, Motor Driver, PiCamera, Ultrasonic sensor
 ##### Origin and inspiration for the project: https://github.com/hamuchiwa/AutoRCCar
 
 
