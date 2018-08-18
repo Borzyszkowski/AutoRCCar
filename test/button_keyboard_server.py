@@ -16,13 +16,14 @@ class KeyboardStreaming(object):
         self.host_ip = socket.gethostbyname(self.host_name)
         self.streaming()
 
-    def type(self):
-        prediction = input("Type F,B,R,L or S: ")
-        prediction = prediction.lower()
-        print(prediction)
-        return prediction
-
     def streaming(self):
+
+        def typing(self):
+            prediction = input("Type F,B,R,L or S: ")
+            prediction = str(prediction)
+            prediction = prediction.lower()
+            print(prediction)
+            return prediction
 
         try:
             print("Host: ", self.host_name + ' ' + self.host_ip)
@@ -30,13 +31,15 @@ class KeyboardStreaming(object):
             start = time.time()
 
             while True:
-                prediction = type(self.connection.send(str(prediction)))
+                #prediction='s'
+                prediction=typing(self)
+                prediction = self.connection.sendall(prediction.encode('utf-8'))
                 time.sleep(0.01)
-                print("Move: % " % prediction)
+                print(prediction)
 
                 # test for 10 seconds
-                if time.time() - start > 10:
-                    break
+                #if time.time() - start > 10:
+                #    break
         finally:
             self.connection.close()
             self.server_socket.close()
