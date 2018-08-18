@@ -1,6 +1,3 @@
-__author__ = 'Borzyszkowski'
-
-
 from socket import *
 import time
 import RPi.GPIO as GPIO
@@ -13,6 +10,9 @@ client_socket = socket(AF_INET, SOCK_STREAM)
 client_socket.connect(('172.20.10.4', 65534))
 
 def measure():
+    """
+    measure distance
+    """
     GPIO.output(GPIO_TRIGGER, True)
     time.sleep(0.00001)
     GPIO.output(GPIO_TRIGGER, False)
