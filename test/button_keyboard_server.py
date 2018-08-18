@@ -35,7 +35,7 @@ class KeyboardStreaming(object):
                 prediction=typing(self)
                 prediction = self.connection.sendall(prediction.encode('utf-8'))
                 time.sleep(0.01)
-                print(prediction)
+                # print(prediction)
 
                 # test for 10 seconds
                 #if time.time() - start > 10:
