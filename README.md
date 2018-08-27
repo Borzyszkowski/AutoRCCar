@@ -8,8 +8,6 @@
 
 
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=BBwEF6WBUQs
-" target="_blank"><img src="http://img.youtube.com/vi/BBwEF6WBUQs/0.jpg" width="360" height="240" border="10" /></a>
 
 ![Screenshot](robotimage.jpg)
 ![Screenshot](robotvideo.MOV)
