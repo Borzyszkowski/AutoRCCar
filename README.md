@@ -1,4 +1,4 @@
-## Robotics in India: Intelligent Robot, Self-Driving, Autonomous Car
+## Robotics in India: Intelligent Robot, Remote/Self-Driving Car
 ### by Bartłomiej Borzyszkowski, Poland
 ### Gdansk University of Technology (ETI) | Karunya Institute of Technology and Sciences (ET)
 
