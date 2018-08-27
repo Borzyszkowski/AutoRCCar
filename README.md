@@ -16,7 +16,7 @@ This project builds a self-driving RC car using Raspberry Pi, Arduino and open s
   
 ### For more information and details visit the folder "Multimedia and Sources".
 ### Don't stray too far from the presentation "Robotics in India" which explains the project.
-[presentation](https://github.com/Borzyszkowski/Robotics-in-India-Intelligent-Robot/blob/master/Multimedia%20and%20Sources/Robotics%20in%20India%20presentation.pdf)
+[Presentation Robotics in India](https://github.com/Borzyszkowski/Robotics-in-India-Intelligent-Robot/blob/master/Multimedia%20and%20Sources/Robotics%20in%20India%20presentation.pdf)
  
 ### Setting up environment with Anaconda
   1. Install [`miniconda`](https://conda.io/miniconda.html) on your computer
