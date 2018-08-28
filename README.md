@@ -1,4 +1,4 @@
-## Robotics in India: Intelligent Robot, Remote/Self-Driving Car
+﻿## Robotics in India: Intelligent Robot, Remote/Self-Driving Car
 ### by Bartłomiej Borzyszkowski, Poland
 ### Gdansk University of Technology (ETI) | Karunya Institute of Technology and Sciences (ET)
 
@@ -11,6 +11,7 @@
 
 ![robot](robot1.jpg)
 ![computer+robot](robot2.jpg)
+![Scheme](Scheme.png)
 
 This project builds a self-driving RC car using Raspberry Pi, Arduino and open source software. Raspberry Pi collects inputs from a camera module and an ultrasonic sensor, and sends data to a computer wirelessly. The computer processes input images and sensor data for object detection (stop sign and traffic light) and collision avoidance respectively. A neural network model runs on computer and makes predictions for steering based on input images. Predictions are then sent to the Arduino for RC car control. 
   
