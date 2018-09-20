@@ -11,11 +11,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="button_keyboard_server.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="button_keyboard_server.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/button_keyboard_server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+            <state relative-caret-position="134">
+              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
               <folding>
                 <element signature="e#30#43#0" expanded="true" />
               </folding>
@@ -23,11 +23,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stream_server_test.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="stream_server_test.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/stream_server_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="35" column="3" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="3" />
+            <state relative-caret-position="561">
+              <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
               <folding>
                 <element signature="e#30#48#0" expanded="true" />
               </folding>
@@ -76,7 +76,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1135" />
+    <option name="x" value="462" />
+    <option name="y" value="67" />
     <option name="width" value="780" />
     <option name="height" value="805" />
   </component>
@@ -85,27 +86,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Robotics-in-India-Intelligent-Robot" type="cbb8eebc:String" user="Robotics-in-India-Intelligent-Robot" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Robotics-in-India-Intelligent-Robot" type="cbb8eebc:String" user="Robotics-in-India-Intelligent-Robot" />
-              <item name="raspberryPi" type="cbb8eebc:String" user="raspberryPi" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Robotics-in-India-Intelligent-Robot" type="cbb8eebc:String" user="Robotics-in-India-Intelligent-Robot" />
-              <item name="test" type="cbb8eebc:String" user="test" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -161,6 +141,27 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Robotics-in-India-Intelligent-Robot" type="cbb8eebc:String" user="Robotics-in-India-Intelligent-Robot" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Robotics-in-India-Intelligent-Robot" type="cbb8eebc:String" user="Robotics-in-India-Intelligent-Robot" />
+              <item name="raspberryPi" type="cbb8eebc:String" user="raspberryPi" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Robotics-in-India-Intelligent-Robot" type="cbb8eebc:String" user="Robotics-in-India-Intelligent-Robot" />
+              <item name="test" type="cbb8eebc:String" user="test" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -194,7 +195,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.stream_server_test">
+  <component name="RunManager" selected="Python.button_keyboard_server">
     <configuration name="button_keyboard_client" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AutoRCCar" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -294,8 +295,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.stream_server_test" />
         <item itemvalue="Python.button_keyboard_server" />
+        <item itemvalue="Python.stream_server_test" />
         <item itemvalue="Python.button_keyboard_client" />
         <item itemvalue="Python.ultrasonic_client" />
         <item itemvalue="Python.stream_client" />
@@ -322,7 +323,7 @@
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26305354" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.12557831" side_tool="true" weight="0.3298969" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.87442166" weight="0.35670102" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.87442166" weight="0.49896908" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -716,22 +717,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/button_keyboard_server.py">
+    <entry file="file://$PROJECT_DIR$/test/stream_server_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+        <state relative-caret-position="561">
+          <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
           <folding>
-            <element signature="e#30#43#0" expanded="true" />
+            <element signature="e#30#48#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/stream_server_test.py">
+    <entry file="file://$PROJECT_DIR$/test/button_keyboard_server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="35" column="3" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="3" />
+        <state relative-caret-position="134">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
           <folding>
-            <element signature="e#30#48#0" expanded="true" />
+            <element signature="e#30#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
